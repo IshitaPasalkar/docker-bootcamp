@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  backend:
+    image: express-demo
+    container_name: backend
+    ports:
+      - "3000:3000"
+
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - "27017:27017"
